@@ -1,5 +1,104 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    header
+        h1= title
+        p Welcome to #{title}'s Code Portfolio
+
+    section
+        h2 Contact
+        p Email:
+            a(href="mailto:ariel@arielkaplan.com") ariel@arielkaplan.com
+        p GitHub:
+            a(href="http://www.github.com/kapari") www.github.com/kapari
+        p 503-927-5721
+    section(id="skills")
+        h2 Skills
+        h3 Languages
+        p.
+            JavaScript, Python, HTML5, CSS3
+        h3 Technologies
+        p.
+            Git, MVC Architecture, OOP, Linux/Terminal, AWS Deployment, Virtual Environments
+        h3 Frameworks
+        p.
+            Django, Express, WordPress, Foundation
+        h3 Design Skills
+        p.
+            Responsive Design, Universal Model Language, Wireframes,
+            InDesign, Illustrator, Photoshop
+        h3 Soft Skills
+        p.
+            Project Planning, Pair Programming, Trello,
+            Agile Scrum, SDLC Management (Software Development Lifecycle)
+        h3 Squishy Skills
+        p.
+            Documentation, Teaching, Empathy, Communication, Customer Service
+
+    section(id="projects")
+        h2 Projects
+        article
+            h3 DanceMatch
+            p An AJAX app built with Django to connect dancers with practice partners.
+            p Skills: JavaScript, Python, Django, HTML, CSS, MVC, AWS Deployment
+            p Website:
+            a(href="http://dancematch.arielkaplan.com") http://dancematch.arielkaplan.com
+        article
+            h3 PatternAgents
+            p Worked with a small team to build the front end of this Jekyll-based blog, news, and e-commerce site.
+            p Skills: HTML, CSS, Wireframes, Responsive Design, Project Planning, Communication
+            p Website:
+                a(href="patternagents.github.io") http://patternagents.github.io
+        article
+            h3 Carruthers Landscape
+            p A one-page responsive site for a small business. Built with Zurb Foundation 4.
+            p Skills: Foundation, HTML, CSS, Wireframes, Project Planning, Photoshop, Communication, Customer Service
+            p Website:
+                a(href="www.carrutherslandscape.com") www.carrutherslandscape.com
+    section
+        h2 Future
+    section(id="community")
+        h2 Community
+        h3 Meetups
+        ul
+            li Women Who Code: JavaScript Night
+            li Monday Python
+            li Tech4Good
+            li CHIFOO
+            li PDX-UX
+            li Code Scouts
+        h3 Hackathons
+        ul
+            li Women Who Hack: Nike & Puppet Labs' Diversity Hackathon
+            li Tech4Good: Set up and customized a WordPress site for a battered womens' shelter.
+
+    section(id="education")
+        h2 Education
+        ul
+            li Current student at PDX Code Guild, 12-week day program, Portland OR
+            li Online Courses: Python (MIT and Rice), Human-Computer Interaction (Stanford), Behavioral Economics (Duke), Treehouse
+            li B.A. Lewis & Clark College, magna cum laude and departmental honors, Portland OR. Art major, Japanese language minor
+            li Graduate with honors of Firestone High School, Akron OH
+    section(id="other")
+        h2 Other Interests
+        h3 Partner Dancing
+        p.
+            I've been teaching group classes and private lessons for nearly four years, currently out of
+            #[a(href="http://www.portlandballroomdancing.com") Uptown Ballroom] in Tigard. Prior to Uptown,
+            I co-founded and hosted a twice-monthly social dance for about two years, and taught group classes
+            at various places around Portland.
+        p.
+            My favorite dances are Nightclub Two-Step, West Coast Swing, Cross-Step Waltz, and Hustle.
+            I also do a smattering of other dances.
+        p Website: #[a(href="http://dance.arielkaplan.com") Ariel Dancing]
+        h3 Photography & Painting
+        p.
+            Although I don't do it too often these days, my first love was drawing. I spent some time
+            as a pet portrait artist, enjoying the delicacy and precision of portraiture combined
+            with cute animals. 'Cause cute animals.
+        p.
+            I like to take an unreasonable number of photos with my Nikon D3000 whenever I go
+            somewhere pretty.
+        p Website: #[a(href="http://www.arielkaplan.com") Portfolio]
+    footer
+        p Still here? [a(href="mailto:ariel@arielkaplan.com") Email me!]
