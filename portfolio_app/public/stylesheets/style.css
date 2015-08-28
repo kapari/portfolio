@@ -10,9 +10,27 @@
 
 body {
     padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font: 14px Calibri, "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/*a {  color: #00B7FF;*/
+article {
+    display: inline-block;
+}
 
+/*a {  */
+    /*color: #947B9B;*/
+    /*text-decoration: none;*/
 /*}*/
+
+/*a:hover {*/
+    /*color: #B7A9C2;*/
+    /*text-decoration: underline;*/
+/*}*/
+
+.skill {
+    display: flex;
+}
+
+.project {
+    display: flex;
+}

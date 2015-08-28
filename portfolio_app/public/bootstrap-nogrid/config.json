@@ -381,7 +381,6 @@
     "@hr-border": "@gray-lighter"
   },
   "css": [
-    "grid.less",
     "buttons.less",
     "thumbnails.less",
     "panels.less",
@@ -393,5 +392,5 @@
     "modal.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=822b60c5bead0b838a5e"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=85e780ba6667ffacfe1c"
 }
