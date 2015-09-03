@@ -1,88 +1,106 @@
 extends layout
 
 block content
-    div(class="container-fluid")
-        header(class="row")
-            h1= title
-            p Welcome to #{title}'s Code Portfolio
+    div.container
+        header.row
+            div(class="col-lg-12")
+                h1= title
+                p Welcome to #{title}'s Code Portfolio
 
-        section(id="contact" class="row")
-            h2 Contact
-            p Email:
-                a(href="mailto:ariel@arielkaplan.com") ariel@arielkaplan.com
-            p GitHub:
-                a(href="http://www.github.com/kapari") www.github.com/kapari
-            p 503-927-5721
-        section(id="skills" class="row")
-            h2 Skills
-            div(class="skill")
+        section.row(id="contact")
+            div(class="col-lg-12")
+                h2 Contact
+                p #[a(href="mailto:ariel@arielkaplan.com") ariel@arielkaplan.com]
+                p #[a(href="http://www.github.com/kapari") www.github.com/kapari]
+                p 503-927-5721
+
+        section.row(id="skills")
+            div(class="col-md-12")
+                h2 Skills
+        div.row
+            div(class="skill col-sm-3 col-md-2 col-lg-1")
                 h3 Languages
-                p.
-                    JavaScript, Python, HTML5, CSS3
-            div(class="skill")
+            div(class="col-sm-9 col-md-10 col-lg-11")
+                p JavaScript, Python, HTML5, CSS3
+        div.row
+            div(class="skill col-sm-3 col-md-2 col-lg-1")
                 h3 Technologies
+            div(class="col-sm-9 col-md-10 col-lg-11")
+                p Git, MVC Architecture, OOP, REST, JSON, Linux/Terminal, AWS Deployment, Virtual Environments
+        div.row
+            div(class="skill col-sm-3 col-md-2 col-lg-1")
+                h3 Languages
+            div(class="col-sm-9 col-md-10 col-lg-11")
+                p Django, Express, Bootstrap, Foundation, WordPress
+        div.row
+            div(class="skill col-sm-3 col-md-2 col-lg-1")
+                h3 Project Skills
+            div(class="col-sm-9 col-md-10 col-lg-11")
                 p.
-                    Git, MVC Architecture, OOP, Linux/Terminal, AWS Deployment, Virtual Environments
-            div(class="skill")
-                h3 Frameworks
-                p.
-                    Django, Express, WordPress, Foundation
-            div(class="skill")
+                    Project Planning, Pair Programming, Trello, UML, Agile Scrum, SDLC Management, Documentation
+        div.row
+            div(class="skill col-sm-3 col-md-2 col-lg-1")
                 h3 Design Skills
+            div(class="col-sm-9 col-md-10 col-lg-11")
                 p.
-                    Responsive Design, Universal Model Language, Wireframes,
-                    InDesign, Illustrator, Photoshop
-            div(class="skill")
+                    Responsive Design, Wireframes, InDesign, Illustrator, Photoshop
+        div.row
+            div(class="skill col-sm-3 col-md-2 col-lg-1")
                 h3 Soft Skills
-                p.
-                    Project Planning, Pair Programming, Trello,
-                    Agile Scrum, SDLC Management (Software Development Lifecycle)
-            div(class="skill")
-                h3 Squishy Skills
-                p.
-                    Documentation, Teaching, Empathy, Communication, Customer Service
+            div(class="col-sm-9 col-md-10 col-lg-11")
+                p Leadership, Teaching, Listening, Communication, Customer Service
 
-        section(id="projects" class="row")
-            h2 Projects
-
-            div(class="col-sm-6" class="col-md-4")
+        section.row(id="projects")
+            div(class="col-lg-12")
+                h2 Projects
+        div.row
+            div(class="col-sm-4")
 
                 article(class="project")
                     div(class="thumbnail")
-                        img(src="http://placehold.it/200x200" alt="")
+                        img(src="images/proj-dance.jpg" alt="DanceMatch")
                         div(class="caption")
                             h3 DanceMatch
                             p An AJAX app built with Django to connect dancers with practice partners.
                             p Skills: JavaScript, Python, Django, HTML, CSS, MVC, AWS Deployment
-                            p Website:
-                            a(href="http://dancematch.arielkaplan.com") http://dancematch.arielkaplan.com
+                            p #[a(href="http://dancematch.arielkaplan.com") dancematch.arielkaplan.com]
 
-            div(class="col-sm-6" class="col-md-4")
+            div(class="col-sm-4")
 
                 article(class="project")
                     div(class="thumbnail")
-                        img(src="http://placehold.it/200x200" alt="")
+                        img(src="images/proj-pa.jpg" alt="PatternAgents")
                         div(class="caption")
                             h3 PatternAgents
                             p Worked with a small team to build the front end of this Jekyll-based blog, news, and e-commerce site.
                             p Skills: HTML, CSS, Wireframes, Responsive Design, Project Planning, Communication
-                            p Website:
-                                a(href="patternagents.github.io") http://patternagents.github.io
+                            p #[a(href="http://patternagents.github.io") patternagents.github.io]
 
-            div(class="col-sm-6" class="col-md-4")
+            div(class="col-sm-4")
 
                 article(class="project")
                     div(class="thumbnail")
-                        img(src="http://placehold.it/200x200" alt="")
+                        img(src="images/proj-cland.jpg" alt="Carruthers Landscape")
                         div(class="caption")
                             h3 Carruthers Landscape
                             p A one-page responsive site for a small business. Built with Zurb Foundation 4.
                             p Skills: Foundation, HTML, CSS, Wireframes, Project Planning, Photoshop, Communication, Customer Service
-                            p Website:
-                                a(href="www.carrutherslandscape.com") www.carrutherslandscape.com
-        section(id="future" class="row")
-            h2 Future
-        section(id="community" class="row")
+                            p #[a(href="http://www.carrutherslandscape.com") www.carrutherslandscape.com]
+
+            div(class="clearfix visible-md-block")
+
+        //section.row(id="future")
+        //    h2 Future
+
+        section.row(id="education")
+            h2 Education
+            ul
+                li PDX Code Guild, Software Engineering 12-week intensive program, Portland OR
+                li Online Courses: Python (MIT and Rice), Human-Computer Interaction (Stanford), Behavioral Economics (Duke), Treehouse
+                li B.A. Lewis & Clark College, magna cum laude and departmental honors, Portland OR. Art major, Japanese language minor
+                li Graduate with honors of Firestone High School, Akron OH
+
+        section.row(id="community")
             h2 Community
 
             div(class="col-md-4")
@@ -100,22 +118,24 @@ block content
 
                 h3 Hackathons
                 ul
-                    li Women Who Hack: Nike & Puppet Labs' Diversity Hackathon
-                    li Tech4Good: Set up and customized a WordPress site for a battered womens' shelter.
+                    li Nike & Puppet Labs' Diversity Hackathon: 2nd Place "Balancing Act"
+                    li Tech4Good: Customized a WordPress site for a battered womens' shelter
 
-        section(id="education" class="row")
-            h2 Education
-            ul
-                li Current student at PDX Code Guild, 12-week day program, Portland OR
-                li Online Courses: Python (MIT and Rice), Human-Computer Interaction (Stanford), Behavioral Economics (Duke), Treehouse
-                li B.A. Lewis & Clark College, magna cum laude and departmental honors, Portland OR. Art major, Japanese language minor
-                li Graduate with honors of Firestone High School, Akron OH
-        section(id="other" class="row")
+            div(class="col-md-4")
+
+                h3 Conventions
+                ul
+                    li Devsigner
+                    li Write the Docs
+                    li BarCamp
+                    li OSCON
+
+        section.row(id="other")
             h2 Other Interests
-            div(class="col-sm-6" class="col-md-6")
+            div(class="col-sm-6 col-md-6")
                 article(class="project")
                     div(class="thumbnail")
-                        img(src="http://placehold.it/200x200" alt="")
+                        img(src="images/dance-bw.jpg" alt="Dancing")
                         div(class="caption")
                             h3 Partner Dancing
                             p.
@@ -126,11 +146,11 @@ block content
                             p.
                                 My favorite dances are Nightclub Two-Step, West Coast Swing, Cross-Step Waltz, and Hustle.
                                 I also do a smattering of other dances.
-                            p Website: #[a(href="http://dance.arielkaplan.com") Ariel Dancing]
+                            p #[a(href="http://dance.arielkaplan.com") Ariel Dancing]
             div(class="col-sm-6" class="col-md-6")
                 article(class="project")
                     div(class="thumbnail")
-                        img(src="http://placehold.it/200x200" alt="")
+                        img(src="images/art-gabby.jpg" alt="Painting")
                         div(class="caption")
                             h3 Photography & Painting
                             p.
@@ -140,6 +160,24 @@ block content
                             p.
                                 I like to take an unreasonable number of photos with my Nikon D3000 whenever I go
                                 somewhere pretty.
-                            p Website: #[a(href="http://www.arielkaplan.com") Portfolio]
-        footer(class="row")
-            p Still here? #[a(href="mailto:ariel@arielkaplan.com") Email me!]
+                            p #[a(href="http://www.arielkaplan.com") Portfolio]
+
+            //div(class="col-md-6")
+            //    article(class="panel panel-default")
+            //        div.panel-heading
+            //            h3.panel-title Photography & Painting
+            //        div.panel-body
+            //            img(src="http://placehold.it/400x200" alt="")
+            //            p.
+            //                Although I don't do it too often these days, my first love was drawing. I spent some time
+            //                as a pet portrait artist, enjoying the delicacy and precision of portraiture combined
+            //                with cute animals. 'Cause cute animals.
+            //            p.
+            //                I like to take an unreasonable number of photos with my Nikon D3000 whenever I go
+            //                somewhere pretty.
+            //        div.panel-footer
+            //            p Website: #[a(href="http://www.arielkaplan.com") Portfolio]
+
+        footer.row
+            div(class="col-md-12")
+                p Still here? #[a(href="mailto:ariel@arielkaplan.com") Email me!]

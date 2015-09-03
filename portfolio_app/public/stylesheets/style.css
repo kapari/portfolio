@@ -31,6 +31,18 @@ article {
     display: flex;
 }
 
+.skill h3 {
+    margin: 0.65em 0; /*reset to base font size*/
+}
+
 .project {
     display: flex;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+header {
+    background: ;
 }
