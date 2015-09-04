@@ -39,10 +39,10 @@ article {
     display: flex;
 }
 
-.thumbnail img {
-    width: 100%;
+.thumbnail {
+    background-color: white;
 }
 
-header {
-    background: ;
+.thumbnail img {
+    width: 100%;
 }
